@@ -6,7 +6,8 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "deploy": "npm run build && npm run export && bun gh-pages out",
+    "export": "next export",
+    "deploy": "bun run build && bun gh-pages out",
     "lint": "next lint"
   },
   "dependencies": {
